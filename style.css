@@ -1,0 +1,998 @@
+/* Header */
+header {
+	
+}
+.wrapper {
+	width: 1839px;
+	margin: auto;
+}
+/* Логотип */
+.logo {
+	margin: -170px 830px 0px;
+	position: absolute;
+}
+.hr {
+    height: 1px;
+    border: 3;
+    border-top: 1px solid #ccc;
+    margin: 160px 50px;
+    padding: 0;
+	position: relative;
+}
+.number {
+	position: absolute;
+	margin: -260px 0px 0px 1300px;
+	font-size: 20px;
+	text-decoration: none;
+	background-color: #4682B4;
+	color: black;
+	border: 0px solid;
+	padding: 12px 25px 12px 25px;
+	border-radius: 30px;
+	box-shadow: 0 0 5px;
+}
+.number:hover {
+	background-color: FFC4D5;
+	transition: 0.5s;
+}
+.primerka {
+	position: absolute;
+	margin: -260px 0px 0px 1530px;
+	font-size: 20px;
+	text-decoration: none;
+	background-color: #4682B4;
+	color: black;
+	border: 0px solid;
+	padding: 12px 25px 12px 25px;
+	border-radius: 30px;
+	box-shadow: 0 0 5px;
+}
+.primerka:hover {
+	background-color: FFC4D5;
+	transition: 0.5s;
+}
+#square {
+    width: 1855px;
+    height: 230px;
+    background: #4682B4;
+	margin: -322px 0px 0px -10px;
+}
+.teleg {
+	margin: -100px 0px 0px 50px;
+	position: absolute;
+}
+.vk {
+	margin: -99px 0px 0px 100px;
+	position: absolute;
+}
+.insta {
+	margin: -99px 0px 0px 150px;
+	position: absolute;
+}
+.phone {
+	margin: -102px 0px 0px 190px;
+	position: absolute;
+}
+.svad {
+	position: absolute;
+	font-size: 15px;
+	font-weight: 200;
+	font-family: serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	margin: -135 0px 0px 470px;
+}
+.svad:after {
+    background-color: #1E90FF; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.svad:hover:after,
+.svad:focus:after {
+    width: 100%;
+}
+.veh {
+	position: absolute;
+	margin: 0px 0px 0px 0px;
+	font-size: 15px;
+	font-weight: 200;
+	font-family: serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	margin: -135 0px 0px 720px;
+}
+.veh:after {
+    background-color: #1E90FF; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.veh:hover:after,
+.veh:focus:after {
+    width: 100%;
+}
+.ukra {
+	position: absolute;
+	margin: 0px 0px 0px 0px;
+	font-size: 15px;
+	font-weight: 200;
+	font-family: serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	margin: -135 0px 0px 950px;
+}
+.ukra:after {
+    background-color: #1E90FF; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.ukra:hover:after,
+.ukra:focus:after {
+    width: 100%;
+}
+.reg {
+	position: absolute;
+	margin: 0px 0px 0px 0px;
+	font-size: 15px;
+	font-weight: 200;
+	font-family: serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	margin: -135 0px 0px 935px;
+}
+.reg:after {
+    background-color: #1E90FF; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.reg:hover:after,
+.reg:focus:after {
+    width: 100%;
+}
+.vhod {
+	position: absolute;
+	margin: 0px 0px 0px 0px;
+	font-size: 15px;
+	font-weight: 200;
+	font-family: serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	margin: -135 0px 0px 1030px;
+}
+.vhod:after {
+    background-color: #1E90FF; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.vhod:hover:after,
+.vhod:focus:after {
+    width: 100%;
+}
+.time {
+	position: absolute;
+	font-size: 15px;
+	font-weight: 200;
+	font-family: serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	margin: -135 0px 0px 1130px;
+}
+.time:after {
+    background-color: #1E90FF; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.time:hover:after,
+.time:focus:after {
+    width: 100%;
+}
+.im1 {
+	margin: 0px 0px 0px -8px;
+}
+#square1 {
+	width: 1855px;
+    height: 900px;
+    background-color:  #4682B4;
+	margin: 0px 0px 0px -8px;
+	position: absolute;
+	opacity: 0.4;
+}
+.nazv {
+	color: white;
+	margin: 400px 0px 0px 660px;
+	position: absolute;
+	font-size: 40px;
+}
+.nazv1 {
+	color: white;
+	margin: 460px 0px 0px 730px;
+	position: absolute;
+	font-size: 30px;
+}
+.nas {
+	font-size: 30px;
+}
+.star {
+	padding: 930px 0px 0px 0px;
+}
+.skidka {
+	margin: -15px 0px 0px 500px;
+}
+.skidka1 {
+	margin: 0px 0px 0px 400px;
+}
+.jehol {
+	margin: -146px 0px 0px 870px;
+}
+.jehol1 {
+	margin: -7px 0px 0px 790px;
+}
+.aks {
+	margin: -158px 0px 0px 1250px;
+}
+.aks1 {
+	margin: -5px 0px 0px 1160px;
+}
+.otp {
+	margin: 15px 0px 0px 500px;
+}
+.otp1 {
+	margin: 0px 0px 0px 450px;
+}
+.podgon {
+	margin: -140px 0px 0px 870px;
+}
+.podgon1 {
+	margin: -10px 700px 0px 800px;
+}
+.rasr {
+	margin: -158px 0px 0px 1250px;
+}
+.rasr1 {
+	margin: -7px 0px 0px 1190px;
+}
+.star1 {
+	margin: 40px 0px 0px 0px;
+}
+.kart1 {
+	display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+	margin: 25px 0px 0px 380px;
+}
+.kart1 img {
+	transition: 1s;
+	display: block;
+}
+.kart1 img:hover {
+	transform: scale(1.1);
+}
+.orfi {
+	text-decoration: none;
+	color: black;
+	margin: -450px 0px 0px 1100px;
+	position: absolute;
+	font-size: 40px;
+}
+.orfi1 {
+	text-decoration: none;
+	color: black;
+	margin: -400px 0px 0px 1100px;
+	position: absolute;
+	font-size: 30px;
+}
+.kart2 {
+	display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+	margin: 0px 0px 0px 380px;
+}
+.kart2 img {
+	transition: 1s;
+	display: block;
+}
+.kart2 img:hover {
+	transform: scale(1.1);
+}
+.rous {
+	text-decoration: none;
+	color: #4682B4;
+	position: absolute;
+	margin: -220px 0px 0px 490px;
+	font-size: 50px;
+}
+.kart3 {
+	display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+	margin: -372px 0px 0px 950px;
+}
+.kart3 img {
+	transition: 1s;
+	display: block;
+}
+.kart3 img:hover {
+	transform: scale(1.1);
+}
+.alda {
+	text-decoration: none;
+	color: #4682B4;
+	position: absolute;
+	margin: -240px 0px 0px 1050px;
+	font-size: 50px;
+}
+.star2 {
+	margin: 10px 0px 0px 0px;
+}
+.map {
+    padding: 0px 0px;
+    text-align: center;
+}
+.container {
+    margin: 15px 0px 0px -853px;
+}
+#square2 {
+	width: 854px;
+    height: 700px;
+    background-color:  #4682B4;
+	margin: -700px 0px 0px 993px;
+	position: absolute;
+}
+.vis1 {
+	color: white;
+	font-size: 40px;
+	margin: -580px 0px 0px 1100px;
+	position: absolute;
+}
+.vis2 {
+	color: white;
+	font-size: 30px;
+	margin: -440px 0px 0px 1100px;
+	position: absolute;
+}
+.vis3 {
+	color: white;
+	font-size: 30px;
+	margin: -400px 0px 0px 1100px;
+	position: absolute;
+}
+.vis4 {
+	color: white;
+	font-size: 20px;
+	margin: -300px 0px 0px 1100px;
+	position: absolute;
+}
+footer {
+	background-color: black;
+	height: 120px;
+	margin: 0px -8px -8px -8px;
+}
+.fotsvad {
+	color: white;
+	padding-top: 30px;
+	font-size: 30px;
+}
+.textfot {
+	color: white;
+	padding-top: 25px;
+	font-size: 10px;
+}
+.kakim {
+	position: absolute;
+	margin: -130px 0px 0px 580px;
+	font-size: 40px;
+	font-style: italic;
+}
+#squaree {
+	width: 1855px;
+    height: 550px;
+    background: #FFFFF9;
+	margin: -535px 0px 0px -10px;
+}
+.kakim1 {
+	margin-top: -35px;
+	font-size: 25px;
+	font-style: italic;
+}
+.kakim2 {
+	margin-top: 60px;
+	font-size: 25px;
+	font-style: italic;
+}
+.main1 {
+	height: 2550px;
+}
+
+
+
+
+
+/* Свадебные */
+.im2 {
+	margin: 0px 0px 0px 350px;
+	position: absolute;
+}
+.im2 img:hover {
+	opacity: 0;
+}
+.im21 {
+	margin: 40px 0px 0px 350px;
+}
+.im3 {
+	margin: 0px 0px 0px 750px;
+	position: absolute;
+}
+.im3 img:hover {
+	opacity: 0;
+}
+.im31 {
+	margin: 0px 0px 0px 750px;
+}
+.im4 {
+	margin: 0px 0px 0px 1150px;
+	position: absolute;
+}
+.im4 img:hover {
+	opacity: 0;
+}
+.im41 {
+	margin: 0px 0px 0px 1150px;
+}
+.nadim1 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 500px;
+}
+.nadim2 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 900px;
+}
+.nadim3 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 1300px;
+}
+.im5 {
+	margin: 600px 0px 0px 350px;
+	position: absolute;
+}
+.im5 img:hover {
+	opacity: 0;
+}
+.im51 {
+	padding-top: 600px;
+	margin: 0px 0px 0px 350px;
+}
+.im6 {
+	margin: 0px 0px 0px 750px;
+	position: absolute;
+}
+.im6 img:hover {
+	opacity: 0;
+}
+.im61 {
+	margin: 0px 0px 0px 750px;
+}
+.im7 {
+	margin: 0px 0px 0px 1150px;
+	position: absolute;
+}
+.im7 img:hover {
+	opacity: 0;
+}
+.im71 {
+	margin: 0px 0px 0px 1150px;
+}
+.nadim4 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 500px;
+}
+.nadim5 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 880px;
+}
+.nadim6 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 1300px;
+}
+.im8 {
+	margin: 600px 0px 0px 350px;
+	position: absolute;
+}
+.im8 img:hover {
+	opacity: 0;
+}
+.im81 {
+	padding-top: 600;
+	margin: 0px 0px 0px 350px;
+}
+.im9 {
+	margin: 0px 0px 0px 750px;
+	position: absolute;
+}
+.im9 img:hover {
+	opacity: 0;
+}
+.im91 {
+	margin: 0px 0px 0px 750px;
+}
+.im10 {
+	margin: 0px 0px 0px 1150px;
+	position: absolute;
+}
+.im10 img:hover {
+	opacity: 0;
+}
+.im101 {
+	margin: 0px 0px 0px 1150px;
+}
+.nadim7 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 480px;
+}
+.nadim8 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 890px;
+}
+.nadim9 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 1280px;
+}
+.im11 {
+	margin: 600px 0px 0px 350px;
+	position: absolute;
+}
+.im11 img:hover {
+	opacity: 0;
+}
+.im111 {
+	padding-top: 600px;
+	margin: 0px 0px 0px 350px;
+}
+.im12 {
+	margin: 0px 0px 0px 750px;
+	position: absolute;
+}
+.im12 img:hover {
+	opacity: 0;
+}
+.im121 {
+	margin: 0px 0px 0px 750px;
+}
+.im13 {
+	margin: 0px 0px 0px 1150px;
+	position: absolute;
+}
+.im13 img:hover {
+	opacity: 0;
+}
+.im131 {
+	margin: 0px 0px 0px 1150px;
+}
+.nadim10 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 480px;
+}
+.nadim11 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 900px;
+}
+.nadim12 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 1300px;
+}
+.starsvad {
+	position: absolute;
+	margin: 570px 0px 0px 900px;
+}
+.heart {
+	position: absolute;
+	font-size: 30px;
+	margin: 580px 0px 0px 720px;
+}
+.nomersvad {
+	font-size: 30px;
+	position: absolute;
+	margin: 650px 0px 0px 800;
+}
+.kakimm {
+	position: absolute;
+	margin: -130px 0px 0px 700px;
+	font-size: 40px;
+	font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Вечерние */
+.im14 {
+	margin: 0px 0px 0px 350px;
+	position: absolute;
+}
+.im14 img:hover {
+	opacity: 0;
+}
+.im141 {
+	margin: 40px 0px 0px 350px;
+}
+.im15 {
+	margin: 0px 0px 0px 750px;
+	position: absolute;
+}
+.im15 img:hover {
+	opacity: 0;
+}
+.im151 {
+	margin: 0px 0px 0px 750px;
+}
+.im16 {
+	margin: 0px 0px 0px 1150px;
+	position: absolute;
+}
+.im16 img:hover {
+	opacity: 0;
+}
+.im161 {
+	margin: 0px 0px 0px 1150px;
+}
+.nadim13 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 500px;
+}
+.nadim14 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 900px;
+}
+.nadim15 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 1300px;
+}
+.im17 {
+	margin: 600px 0px 0px 350px;
+	position: absolute;
+}
+.im17 img:hover {
+	opacity: 0;
+}
+.im171 {
+	padding-top: 600px;
+	margin: 0px 0px 0px 350px;
+}
+.im18 {
+	margin: 0px 0px 0px 750px;
+	position: absolute;
+}
+.im18 img:hover {
+	opacity: 0;
+}
+.im181 {
+	margin: 0px 0px 0px 750px;
+}
+.im19 {
+	margin: 0px 0px 0px 1150px;
+	position: absolute;
+}
+.im19 img:hover {
+	opacity: 0;
+}
+.im191 {
+	margin: 0px 0px 0px 1150px;
+}
+.nadim16 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 500px;
+}
+.nadim17 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 880px;
+}
+.nadim18 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 1300px;
+}
+.im20 {
+	margin: 600px 0px 0px 350px;
+	position: absolute;
+}
+.im20 img:hover {
+	opacity: 0;
+}
+.im201 {
+	padding-top: 600;
+	margin: 0px 0px 0px 350px;
+}
+.im21a {
+	margin: 0px 0px 0px 750px;
+	position: absolute;
+}
+.im21a img:hover {
+	opacity: 0;
+}
+.im211 {
+	margin: 0px 0px 0px 750px;
+}
+.im22 {
+	margin: 0px 0px 0px 1150px;
+	position: absolute;
+}
+.im22 img:hover {
+	opacity: 0;
+}
+.im221 {
+	margin: 0px 0px 0px 1150px;
+}
+.nadim19 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 480px;
+}
+.nadim20 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 890px;
+}
+.nadim21 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 1280px;
+}
+.im23 {
+	margin: 600px 0px 0px 350px;
+	position: absolute;
+}
+.im23 img:hover {
+	opacity: 0;
+}
+.im231 {
+	padding-top: 600px;
+	margin: 0px 0px 0px 350px;
+}
+.im24 {
+	margin: 0px 0px 0px 750px;
+	position: absolute;
+}
+.im24 img:hover {
+	opacity: 0;
+}
+.im241 {
+	margin: 0px 0px 0px 750px;
+}
+.im25 {
+	margin: 0px 0px 0px 1150px;
+	position: absolute;
+}
+.im25 img:hover {
+	opacity: 0;
+}
+.im251 {
+	margin: 0px 0px 0px 1150px;
+}
+.nadim22 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 480px;
+}
+.nadim23 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 900px;
+}
+.nadim24 {
+	position:absolute;
+	font-size: 30px;
+	margin: 500px 0px 0px 1300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* registration */
+.main2 {
+	height: 800px;
+}
+.form-wrap {
+  height: 650px;
+  width: 550px;
+  background: white;
+  border-radius: 20px;
+  margin: 0px 0px 0px 630px;
+  border: 1px solid;
+}
+.form-wrap1 {
+  height: 650px;
+  width: 550px;
+  background: white;
+  border-radius: 20px;
+  margin: 0px 0px 25px 630px;
+  border: 1px solid;
+  padding: 0px 0px 25px 0px;
+}
+.profile {
+  width: 240px;
+  float: left;
+  text-align: center;
+  padding: 30px;
+  margin: 5px 0px 0px 125px;
+}
+form {
+  background: white;
+  float: left;
+  width: calc(100% - 240px);
+  padding: 30px;
+  border-radius: 20px 20px 20px 20px;
+  border: 1px solid;
+  color: #7b7b7b; 
+  margin: -10px 0px 0px 90px;
+}
+.form-wrap:after, form div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.form-wrap1:after, form div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+form div {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+/********************** стилизация элементов формы **********************/
+label, span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+input[type="text"], input[type="email"] {
+  border-width: 0;
+  outline: none;
+  margin: 0;
+  width: 100%;
+  padding: 10px 15px;
+  background: #e6e6e6;
+}
+input[type="datetime-local"], input[type="email"] {
+  border-width: 0;
+  outline: none;
+  margin: 0;
+  width: 100%;
+  padding: 10px 15px;
+  background: #e6e6e6;
+}
+input[type="password"], input[type="password"] {
+  border-width: 0;
+  outline: none;
+  margin: 0;
+  width: 100%;
+  padding: 10px 15px;
+  background: #e6e6e6;
+}
+button {
+  padding: 10px 0;
+  border-width: 0;
+  display: block;
+  width: 190px;
+  margin: 25px auto 0;
+  background: #60e6c5;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.knop404 a {
+	text-decoration: none;
+	margin: -200px 0px 0px -120px;
+	position: absolute;
+	color: black;
+}
+.knop404 a:hover {
+	color: red;
+}
