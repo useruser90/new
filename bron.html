@@ -1,0 +1,99 @@
+<? php
+    session_start();
+    $mysqli = mysqli_connect(‘localhost’, ‘Izanami’, ‘2356’, ‘Romans’);
+?>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Ресторан "Лучший"</title>
+<link rel="icon" href="images/logolog.png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<div class="wrapper">
+<body>
+<header class="header">
+<div class="logo">
+<h1><a href="index.html"><img src="images/logolog.png" width="220" height="130" align="left"></a></h1>
+</div>
+<div class="teleg">
+<a href="#"><img src="images/teleg.png" width="40" height="40" align="left"></a>
+</div>
+<div class="vk">
+<a href="#"><img src="images/vk.png" width="35" height="35" align="left"></a>
+</div>
+<div class="insta">
+<a href="#"><img src="images/insta.png" width="35" height="35" align="left"></a>
+</div>
+<div class="phone">
+<a href="#"><img src="images/phone.png" width="40" height="40" align="left"></a>
+</div>
+<div class="hr"></div>
+<a class="number" type="submit" href=""><b>+7 (999) 328-22-94</b></a>
+<a class="bron" type="submit" href="#"><b>Забронировать столик</b></a>
+<h1><a class="svad" type="submit" href="banket.html">Организовать банкет</a></h1>
+<h1><a class="veh" type="submit" href="party.html">Организовать праздник</a></h1>
+<a class="time" type="submit" href="index.html">Ежедневно 10:00-20:00</a>
+<div id="square"></div>
+</header>
+<main class="main">
+<div class="form-wrap1">
+  <div class="profile"><img src="https://avatars.mds.yandex.net/i?id=6a38a8de6684846ad4792fa7f3560004e9eff000-9041585-images-thumbs&ref=rim&n=33&w=200&h=200" height="140" width="140">
+    <h1>Бронь</h1>
+	</div>
+    <form method="post" action="testreg.php">
+    <div>
+      <label for="name">Ваше имя</label>
+      <input type="text" name="name" required>
+    </div>
+    <div>
+      <label for="email">Ваша почта</label>
+      <input type="text" name="email" required>
+    </div>
+	<div>
+       <label for="localdate">Дата и время: </label>
+       <input type="datetime-local" id="localdate" name="date"/>
+    </div>
+    <button type="submit">Отправить</button> 
+  </form>
+</div>
+<?php
+
+	if (isset($_POST['name']) && $_POST['name'] != "")//если существует атрибут NAME и он не пустой то создаем переменную для отправки сообщения
+		$name = $_POST['name'];
+	else die ("Не заполнено поле \"Имя\"");//если же атрибут пустой или не существует то завершаем выполнение скрипта и выдаем ошибку пользователю.
+
+	if (isset($_POST['email']) && $_POST['email'] != "") //тут все точно так же как и в предыдущем случае
+		$email = $_POST['email'];
+	else die ("Не заполнено поле \"Email\"");
+
+	if (isset($_POST['message']) && $_POST['message'] != "") 
+		$body = $_POST['message'];
+	else die ("Не заполнено поле \"Сообщение\"");
+	 
+
+
+	$address = "YOUR-EMAIL@MAIL.RU";//адрес куда будет отсылаться сообщение для администратора
+	$mes  = "Имя: $name \n";	//в этих строчках мы заполняем текст сообщения. С помощью оператора .= мы просто дополняем текст в переменную
+	$mes .= "E-mail: $email \n";
+ 	$mes .= "Текст: $body"; 
+	$send = mail ($address,$sub,$mes,"Content-type:text/plain; charset = UTF-8\r\nFrom:$email");//собственно сам вызов функции отправки сообщения на сервере
+
+	if ($send) //проверяем, отправилось ли сообщение
+		echo "Сообщение отправлено успешно!";
+	else 
+		echo "Ошибка, сообщение не отправлено! Возможно, проблемы на сервере";
+		 
+?>
+</main>
+<footer>
+<div class="fotsvad">
+<center>Ресторан "Лучший"</center>
+</div>
+<div class="textfot">
+<center>© Ресторан "Лучший", 2024 г.</center>
+</div>
+</div>
+</footer>
+</body>
+</html>
