@@ -1,0 +1,184 @@
+<? php
+    session_start();
+    $mysqli = mysqli_connect(‘localhost’, ‘Izanami’, ‘2356’, ‘Romans’);
+?>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Ресторан "Лучший"</title>
+<link rel="icon" href="C:/Users/stud/Desktop/filenew/restaurant-projectio.jpg">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<div class="wrapper">
+<body>
+<header class="header">
+<div class="logo">
+<h1><a href="index.html"><img src="C:/Users/stud/Desktop/filenew/restaurant-projectio.jpg" width="220" height="130" align="left"></a></h1>
+</div>
+<div class="teleg">
+<a href="#"><img src="images/teleg.png" width="40" height="40" align="left"></a>
+</div>
+<div class="vk">
+<a href="#"><img src="images/vk.png" width="35" height="35" align="left"></a>
+</div>
+<div class="insta">
+<a href="#"><img src="images/insta.png" width="35" height="35" align="left"></a>
+</div>
+<div class="phone">
+<a href="#"><img src="images/phone.png" width="40" height="40" align="left"></a>
+</div>
+<div class="hr"></div>
+<a class="number" type="text"><b>+7 (999) 328-22-94</b></a>
+<a class="primerka" type="submit" href="bron.html"><b>Забронировать столик</b></a>
+<h1><a class="svad" type="submit" href="banket.html">Организовать банкет</a></h1>
+<h1><a class="veh" type="submit" href="party.html">Организовать праздник</a></h1>
+<h1><a class="ukra" type="submit" href="detparty.html">Детский праздник</a></h1>
+<a class="time" type="submit" href="index.html">Без выходных 10:00-20:00</a>
+<h1><a class="svad" type="submit" href="fetch_api.html">.</a></h1>
+<div id="square"></div>
+</header>
+<main class="main">
+<div class="im1">
+<img src="C:/Users/stud/Desktop/filenew/restaurant-projectio.jpg" width="1855" height="900" align="left">
+</div>
+<div id="square1">&nbsp;</div>
+<div class="nazv"><p><b>Ресторан "Лучший"</b></p></div>
+<div class="nazv1"><p>Лучшее место для отдыха, проведения банкетов, праздников</p></div>
+<div class="star">
+<center><img src="C:/Users/stud/Desktop/filenew/restaurant-projectio.jpg"></center>
+</div>
+<div class="nas">
+<p><center><b>Почему выбирают наш ресторан?</b></center></p>
+</div>
+<div class="skidka">
+<img src="C:/Users/stud/Desktop/filenew/pochemu.jpg">
+</div>
+<div class="skidka1">
+<p><b>Скидка</b> В первый раз</p>
+</div>
+<div class="jehol">
+<img src="C:/Users/stud/Desktop/filenew/124.970.jpg">
+</div>
+<div class="jehol1">
+<p>Организация<b> банкетов</b></p>
+</div>
+<div class="aks">
+<img src="C:/Users/stud/Desktop/filenew/banket-svadba-vremya.jpg">
+</div>
+<div class="aks1">
+<p>Организация<b> праздников</b></p>
+</div>
+&nbsp;
+<div class="otp">
+<img src="C:/Users/stud/Desktop/filenew/ma1.jpg">
+</div>
+<div class="otp1">
+<p>Организация<b> детских праздников</b></p>
+</div>
+<div class="podgon">
+<img src="C:/Users/stud/Desktop/filenew/festival.png">
+</div>
+<div class="podgon1">
+<p>Музыкальные концерты и <b>фестивали</b></p>
+</div>
+<div class="rasr">
+<img src="C:/Users/stud/Desktop/filenew/vecher.png">
+</div>
+<div class="rasr1">
+<p><b>Поэтические</b> вечера</p>
+</div>
+<div class="star1">
+<center><img src="C:/Users/stud/Desktop/filenew/restaurant-projectio.jpg"></center>
+</div>
+
+
+<div class="kart2">
+<img src="C:/Users/stud/Desktop/filenew/banket-svadba-vremya.jpg" width="550" height="350">
+</div>
+<h1><a class="rous" type="submit" href="svadba.html">Организация банкетов</a></h1>
+<div class="kart3">
+<img src="C:/Users/stud/Desktop/filenew/124.970.jpg" width="530" height="350">
+</div>
+<h1><a class="alda" type="submit" href="svadba.html">Организация праздников</a></h1>
+<div class="form-wrap">
+  <div class="profile"><img src="C:/Users/stud/Desktop/filenew/banket-svadba-vremya.jpg" height="140" width="140">
+    <h1>Связаться с нами</h1>
+  </div>
+  <form method="post" action="testreg.php">
+    <div>
+      <label for="name">Ваше имя</label>
+      <input type="text" name="name" required>
+    </div>
+    <div>
+      <label for="email">Ваша почта</label>
+      <input type="text" name="email" required>
+    </div>
+	<div>
+      <label for="message">Ваше сообщение</label>
+      <input type="text" name="message" required>
+    </div>
+    <button type="submit">Отправить</button> 
+  </form>
+</div>
+<?php
+
+	if (isset($_POST['name']) && $_POST['name'] != "")//если существует атрибут NAME и он не пустой то создаем переменную для отправки сообщения
+		$name = $_POST['name'];
+	else die ("Не заполнено поле \"Имя\"");//если же атрибут пустой или не существует то завершаем выполнение скрипта и выдаем ошибку пользователю.
+
+	if (isset($_POST['email']) && $_POST['email'] != "") //тут все точно так же как и в предыдущем случае
+		$email = $_POST['email'];
+	else die ("Не заполнено поле \"Email\"");
+
+	if (isset($_POST['message']) && $_POST['message'] != "") 
+		$body = $_POST['message'];
+	else die ("Не заполнено поле \"Сообщение\"");
+	 
+
+
+	$address = "YOUR-EMAIL@MAIL.RU";//адрес куда будет отсылаться сообщение для администратора
+	$mes  = "Имя: $name \n";	//в этих строчках мы заполняем текст сообщения. С помощью оператора .= мы просто дополняем текст в переменную
+	$mes .= "E-mail: $email \n";
+ 	$mes .= "Текст: $body"; 
+	$send = mail ($address,$sub,$mes,"Content-type:text/plain; charset = UTF-8\r\nFrom:$email");//собственно сам вызов функции отправки сообщения на сервере
+
+	if ($send) //проверяем, отправилось ли сообщение
+		echo "Сообщение отправлено успешно!";
+	else 
+		echo "Ошибка, сообщение не отправлено! Возможно, проблемы на сервере";
+		 
+?>
+<div class="star2">
+<center><img src="C:/Users/stud/Desktop/filenew/restaurant-projectio.jpg"></center>
+</div>
+<section class="map">
+    <div class="container">
+	    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d73903.27972796073!2d39.721369599999996!3d54.6308096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1686396905164!5m2!1sru!2sru" width="1000" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+<div id="square2"></div>
+<div class="vis1">
+<p>Ресторан "Лучший"</p>
+</div>
+<div class="vis2">
+Адрес: ул. Первая, д.99
+</div>
+<div class="vis3">
+Телефон: +7 (999) 328-22-94
+</div>
+<div class="vis4">
+Мы работаем без выходных с 10:00 до 20:00
+</div>
+</main>
+<footer>
+<div class="fotsvad">
+<center>Ресторан "Лучший"</center>
+</div>
+<div class="textfot">
+<center>© Ресторан "Лучший", 2024 г.</center>
+</div>
+</div>
+</footer>
+</body>
+</html>
